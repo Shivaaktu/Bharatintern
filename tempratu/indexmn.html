@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert temprature</title>
+</head>
+<link rel="stylesheet" href="main.css">
+
+<body>
+    <h1 id="heading">Convert the temprature to <em>Celcius, </em><em>Farenhiet, </em><em>etc.</em></h1>
+    
+    <form>
+        <fieldset>
+            <legend>
+                <h2>Farenhiet to others</h2>
+            </legend>
+            <label>Enter emprature in Farenhiet:</label>
+            <input type="number" id="inputfarenhiet" placeholder="  ex 80 f" oninput="tempratureconverter1(this.value)"
+                onchange="tempratureconverter(this.value)">
+            <label>Temprature in Celcius:</label>
+            <textarea id="otcel1" cols="15" rows="1" placeholder=" in Celcius"></textarea>
+            <label>Temprature in kelvin:</label>
+            <textarea id="otkel1" cols="15" rows="1" placeholder=" in kelvin"></textarea>
+
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>
+                <H2>Celcius to others</H2>
+            </legend>
+            <label for="Temprature">Enter temprature in Celcius:</label>
+            <input type="number" id="inputcelcius" placeholder=" ex 35 c" oninput="tempratureconverter2(this.value)"
+                onchange="tempratureconverter2(this.vlaue)">
+            <label> Temprature in Farenhiet:</label>
+            <textarea id="otfar2" cols="15" rows="1" placeholder="in Farenhiet"></textarea>
+            <label> Temprature in kelvin</label>
+            <textarea id="otkel2" cols="15" rows="1" placeholder="in kelvin"></textarea>
+
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>
+                <H2>kelvin to others</H2>
+            </legend>
+            <label>Enter temprature in kelvin:</label>
+            <input type="number" id="inputkelvin" placeholder=" ex 300 K" oninput="tempratureconverter3(this.value)"
+                onchange="tempratureconverter3(this.value)">
+            <label> Temprature in Celcius</labe>
+                <textarea id="otcel3" cols="15" rows="1" placeholder="in Celcius"></textarea>
+                <label> Temprature in Farenhiet</label>
+                <textarea id="otfar3" cols="15" rows="1" placeholder="in Farenhiet"></textarea>
+        </fieldset>
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>

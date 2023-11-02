@@ -1,0 +1,13 @@
+body {
+    background-image: url(thermometer_jpg.jpg);
+    border: 5px solid black;
+    height: 100vh;
+}
+
+fieldset {
+    width: 83%;
+}
+h2{
+    color: rgb(229, 15, 58);
+}
+
